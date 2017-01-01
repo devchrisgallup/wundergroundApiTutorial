@@ -1,0 +1,21 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    background-color: #82CAFF; 
+    color: #FFF;
+}
+
+button {
+    background-color: #FFF;
+    color: #000;
+}
+
+.center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.marginTopTwenty {
+    margin-top: 20%; 
+}
