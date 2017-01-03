@@ -1,7 +1,6 @@
 // start up 
 function startUp() {
     fetchData();
-    hideText();
 }
 
 // Ajax call to wunderground's API
@@ -20,10 +19,6 @@ function fetchData() {
     // calls the open 
     xhttp.open("GET", "http://api.wunderground.com/api/YouKey/geolookup/conditions/q/MO/KANSAS_CITY.json", true);
     xhttp.send();  
-}
-
-function hideText() {
-    
 }
 
 // get location
