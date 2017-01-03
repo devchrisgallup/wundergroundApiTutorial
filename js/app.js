@@ -18,7 +18,7 @@ function fetchData() {
     }
     };
     // calls the open 
-    xhttp.open("GET", "http://api.wunderground.com/api/08946f7cb621e667/geolookup/conditions/q/MO/KANSAS_CITY.json", true);
+    xhttp.open("GET", "http://api.wunderground.com/api/YouKey/geolookup/conditions/q/MO/KANSAS_CITY.json", true);
     xhttp.send();  
 }
 
