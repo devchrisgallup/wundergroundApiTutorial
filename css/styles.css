@@ -20,3 +20,11 @@ button {
 .marginTopTwenty {
     margin-top: 20%; 
 }
+
+.hideText {
+    color: transparent;
+}
+
+.showText {
+    color: #FFF;
+}
