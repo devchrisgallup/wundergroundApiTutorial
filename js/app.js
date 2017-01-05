@@ -17,7 +17,7 @@ function fetchData() {
     }
     };
     // calls the open 
-    xhttp.open("GET", "http://api.wunderground.com/api/youkey/geolookup/conditions/q/MO/KANSAS_CITY.json", true);
+    xhttp.open("GET", "http://api.wunderground.com/api/08946f7cb621e667/geolookup/conditions/q/MO/KANSAS_CITY.json", true);
     xhttp.send();  
 }
 
@@ -35,12 +35,15 @@ function getWeather() {
     // output div
     output = document.getElementById('weather');
     conditionDiv = document.getElementById('condition');
+    humidityDiv = document.getElementById('humidity');
     console.log(weatherData);
     // place object key/value into div
     document.getElementById('currentTempText').className = 'showText';
     output.innerHTML = weatherData.current_observation.temp_f + "&deg;";
     document.getElementById('currentConditionText').className = 'showText';
     conditionDiv.innerHTML = weatherData.current_observation.weather;
+    document.getElementById('currentHumidityText').className = 'showText';
+    humidityDiv.innerHTML = weatherData.current_observation.relative_humidity;
 }
 
 // eventlisteners 
